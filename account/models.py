@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser,BaseUserManager
 
-# Create your models here.
+#Model for superadmin
 class MyAccountManager(BaseUserManager):
     def create_user(self, first_name, last_name, username, email, password =None):
         if not email:
@@ -22,7 +22,8 @@ class MyAccountManager(BaseUserManager):
         return user
 
     def create_superuser(self, first_name, last_name,email,password):
-        
+
+
 
 
 class Account(AbstractBaseUser):
