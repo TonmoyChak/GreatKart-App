@@ -71,6 +71,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'greatkart.wsgi.application'
 
+# using custom user models
+# account app name Account model name
+
+AUTH_USER_MODEL = 'account.Account'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -125,3 +129,7 @@ STATICFILES_DIRS = [
     'greatkart/static',
 
 ]
+
+# media files configurations
+MEDIA_URL = '/media/'
+MEDIA_ROOT= BASE_DIR / 'media'
