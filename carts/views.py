@@ -35,7 +35,7 @@ def add_cart(request, product_id):
 
         cart_item.save()
 
-    return HttpResponse(cart_item.quantity)
+
     return redirect('cart')
 
 
